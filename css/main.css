@@ -3,8 +3,24 @@
     padding: 0px;
 }
 
+body {
+    background-color: teal;
+}
+
+#thecontainer {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
 #characterdiv {
     text-align: center;
+    background-color: white;
+    width: 60vh;
+    height: 70vh;
+    /* border: 2px seagreen solid; */
+    border-radius: 20px;
+    box-shadow: rgb(37, 37, 37) 5px 5px 5px;
 }
 
 .form {
@@ -18,4 +34,13 @@ form {
 
 button {
     margin: 1vh;
+}
+
+.name {
+    margin-top: 2.5vh;
+}
+
+h1 {
+    color: white;
+    margin-top: 2vh;
 }
