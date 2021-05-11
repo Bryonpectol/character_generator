@@ -12,7 +12,9 @@
     </head>
     <body>
 
-        <form>
+        <div class="form">
+            <h1>Character Generator</h1>
+        <form id="form">
             <label>Male or Female:</label>
             <select id="genderSelect">
                 <option>Select Gender</option>
@@ -22,7 +24,9 @@
             </select>
         </form>
 
-        <button onclick="Generated()">Generate!</button>
+        <button id="btn" onclick="Generated()">Generate!</button>
+
+        </div>
 
 
         <div id="characterdiv">
