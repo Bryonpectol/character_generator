@@ -2159,6 +2159,7 @@ let genderSelect = document.getElementById("genderSelect");
 let strUser = genderSelect.options[genderSelect.selectedIndex].value;
 
 Form.style.visibility = "hidden";
+Form.style.height = "0px";
 btn.style.visibility = "hidden";
 
 
