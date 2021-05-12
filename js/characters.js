@@ -2187,6 +2187,8 @@ let GenderEl;
 
 let btn = document.getElementById("btn");
 
+let refresh = document.getElementById("refresh");
+
 let genderSelect = document.getElementById("genderSelect");
 
 let strUser = genderSelect.options[genderSelect.selectedIndex].value;
@@ -2194,7 +2196,7 @@ let strUser = genderSelect.options[genderSelect.selectedIndex].value;
 Form.style.visibility = "hidden";
 Form.style.height = "0px";
 btn.style.visibility = "hidden";
-
+refresh.style.visibility = "visible";
 
 if(strUser == "Male") {
 
@@ -2788,5 +2790,11 @@ if(strUser == "Other") {
     // StoryEl.innerHTML = `${FirstName} is a ${OccuEl.value}.`;
 
     // container.appendChild(StoryEl);
+
+}
+
+function refresh() {
+
+    location.reload();
 
 }

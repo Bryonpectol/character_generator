@@ -26,7 +26,40 @@ body {
 
 .form {
     text-align: center;
-    
+    /* height: 20vh; */
+}
+
+#refresh {
+    visibility: hidden;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 2vh;
+    background-color: darkgoldenrod;
+    box-shadow: rgb(37, 37, 37) 2px 2px 2px;
+    font-size: 1rem;
+    margin-bottom: 1vh;
+}
+
+#refresh:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#btn {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 2vh;
+    background-color: darkgoldenrod;
+    box-shadow: rgb(37, 37, 37) 2px 2px 2px;
+    font-size: 2rem;
+    margin: 1vh;
+}
+
+#btn:hover {
+    cursor: pointer;
+    box-shadow: none;
 }
 
 form {
@@ -55,10 +88,6 @@ label {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-button {
-    margin: 1vh;
 }
 
 .name {
