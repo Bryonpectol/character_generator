@@ -1175,7 +1175,7 @@ let occupations = ["Account Collectors",
 "Dancers",
 "Data Entry Keyers",
 "Database Administrators",
-"Delivery Truck Drivers and Driver/Sales Workers",
+"Delivery Truck Driver and Driver/Sales Workers",
 "Demonstrators and Product Promoters",
 "Dental Assistants",
 "Dental Hygienists",
@@ -1684,8 +1684,8 @@ let occupations = ["Account Collectors",
 "Travel Agents",
 "Travel Clerks",
 "Travel Guides",
-"Truck Drivers - Delivery and Sales Workers",
-"Truck Drivers - Heavy and Tractor-trailer",
+"Truck Driver - Delivery and Sales Workers",
+"Truck Driver - Heavy and Tractor-trailerr",
 "Ultrasound Techniciann",
 "Umpires, Referees, and Other Sports Officials",
 "Upholsterers",
@@ -2135,13 +2135,45 @@ let hobbies = ['3D printing',
 'Vehicle restoration',
 'Water sports'];
 
-let maritalStatis = ['married', 'single', 'divorced', 'separated', 'widowed'];
+let maritalStatis = ['Married', 'Single', 'Divorced', 'Separated', 'Widowed'];
 
 let PSArray = ['neutral', 'liberal', 'conservative', 'slightly liberal', 'slightly conservative', 'extreme liberal', 'extreme conservative', 'not affiliated'];
+
+let Hair = ['Brown', 'Black', 'Blonde', 'Silver', 'Dirty Blonde', 'Red', 'Pink', 'Blue', 'Green'];
+
+let Eyes = ['Brown', 'Blue', 'Green', 'Grey', 'Hazel'];
+
+let EyesFemaleImg = [];
+
+let HairFemaleImg = [];
+
+let FemaleBodyImg = [];
+
+let FemaleHeadImg = [];
+
+let EyesMaleImg = [];
+
+let HairMaleImg = [];
+
+let MaleBodyImg = [];
+
+let MaleHeadImg = [];
+
+let GlassesImg = [];
 
 let bothArray = femaleNames.concat(maleNames);
 
 function Generated() {
+
+let BothNameEl;
+
+let MaleNameEl;
+
+let FemaleNameEl;
+
+let FirstName;
+
+let atrEl;
 
 let theCont = document.getElementById("thecontainer");
 
@@ -2174,7 +2206,7 @@ let GenderEl = document.createElement("p");
 
 console.log(maleNum);
 
-let MaleNameEl = document.createElement("p");
+MaleNameEl = document.createElement("p");
 
 MaleNameEl.className = "name";
 
@@ -2184,9 +2216,19 @@ let Firstid = document.getElementById("firstid");
 
 if(Firstid.value != "") {
     MaleNameEl.textContent = "First Name: " + Firstid.value;
+
+    FirstName = document.createElement("p");
+
+    FirstName.textContent = Firstid.value;
+
+    console.log(FirstName);
 }
 else {
     MaleNameEl.textContent = "First Name: " + maleNames[maleNum];
+
+    FirstName = maleNames[maleNum];
+
+    console.log(FirstName);
 }
 
 // Last Name
@@ -2222,7 +2264,7 @@ let GenderEl = document.createElement("p");
 
 console.log(femaleNum);
 
-let FemaleNameEl = document.createElement("p");
+FemaleNameEl = document.createElement("p");
 
 FemaleNameEl.className = "name";
 
@@ -2235,6 +2277,10 @@ if(Firstid.value != "") {
 }
 else {
     FemaleNameEl.textContent = "First Name: " + femaleNames[femaleNum];
+
+    FirstName = femaleNames[femaleNum];
+
+    console.log(FirstName);
 }
 
 // Last Name
@@ -2283,6 +2329,10 @@ if(strUser == "Other") {
         }
         else {
             BothNameEl.textContent = "First Name: " + bothArray[bothNum];
+
+            FirstName = bothArray[bothNum];
+
+            console.log(FirstName);
         }
 
 
@@ -2315,7 +2365,7 @@ if(strUser == "Other") {
     
     let bothNum = Math.floor(Math.random() * bothArray.length);
         
-    let BothNameEl = document.createElement("p");
+    BothNameEl = document.createElement("p");
 
     BothNameEl.className = "name";
     
@@ -2326,11 +2376,16 @@ if(strUser == "Other") {
         }
         else {
             BothNameEl.textContent = "First Name: " + bothArray[bothNum];
+
+            FirstName = bothArray[bothNum];
+
+            console.log(FirstName);
         }
     
     container.appendChild(BothNameEl);
 
     GenderNum = Math.floor(Math.random() * (3 - 1) + 1);
+    
 
     // Last Name
 
@@ -2412,7 +2467,7 @@ if(strUser == "Other") {
     let old = false;
 
     if(ageNum < 14) {
-        OccuEl.textContent = "Occupation: None";
+        OccuEl.textContent = "Occupation: None (too young)";
         young = true;
     }
 
@@ -2432,7 +2487,7 @@ if(strUser == "Other") {
 
     if(young == true ) {
         console.log(young);
-        OccuEl.textContent = "Occupation: None"
+        OccuEl.textContent = "Occupation: None (too young)"
     }
     else {
         console.log(young);
@@ -2496,6 +2551,118 @@ if(strUser == "Other") {
     }
     else {
         HobEl.textContent = "Hobbies: " + hobbies[hobNum] + ", " + hobbies[hobNum2];
+    }
+
+
+    // Glasses
+
+    let GlassNum;
+
+    let GlassArray = ['has glasses', 'Does not have glasses']
+
+    let GlassEl = document.createElement("p");
+
+    let veryYoung = false;
+
+    if(ageNum < 5) {
+        veryYoung = true;
+    }
+
+    if(veryYoung == true) {
+        GlassEl.textContent = "Glasses: None (too young)";
+        HobEl.textContent = "Hobbies: None (too young)";
+    }
+    else {
+        GlassNum = Math.floor(Math.random() * (100 - 1) + 1);
+
+        if(GlassNum < 50) {
+            GlassEl.textContent = "Glasses: " + GlassArray[0];
+        }
+        else {
+            GlassEl.textContent = "Glasses: " + GlassArray[1];
+        }
+    }
+
+
+    // Hair
+
+    let HairEl = document.createElement("p");
+
+    let HairNum = Math.floor(Math.random() * Hair.length);
+
+    HairEl.textContent = "Hair Color: " + Hair[HairNum];
+
+
+    // Eyes
+
+    let EyesEl = document.createElement("p");
+
+    let EyesNum = Math.floor(Math.random() * Eyes.length);
+
+    EyesEl.textContent = "Eye Color: " + Eyes[EyesNum];
+
+
+    // Weight
+
+    let WeightEl = document.createElement("p");
+
+
+
+    if(ageNum <= 3) {
+        let WeightNum = Math.floor(Math.random() * (35 - 5) + 5);
+        WeightEl.textContent = "Weight: " + WeightNum + " lbs.";
+    }
+
+    if(ageNum > 3 && ageNum < 10) {
+        let WeightNum = Math.floor(Math.random() * (70 - 36) + 36);
+        WeightEl.textContent = "Weight: " + WeightNum + " lbs.";
+    }
+
+    if(ageNum >= 10 && ageNum <= 16) {
+        let WeightNum = Math.floor(Math.random() * (160 - 70) + 70);
+        WeightEl.textContent = "Weight: " + WeightNum + " lbs.";
+    }
+    
+    if(ageNum > 16 && ageNum < 25) {
+        let WeightNum = Math.floor(Math.random() * (200 - 115) + 115);
+        WeightEl.textContent = "Weight: " + WeightNum + " lbs.";
+    }
+
+    if(ageNum >= 25) {
+        let WeightNum = Math.floor(Math.random() * (250 - 115) + 115);
+        WeightEl.textContent = "Weight: " + WeightNum + " lbs.";
+    }
+
+
+    // Height
+
+    let HeightEl = document.createElement("p");
+
+    let InchNum = Math.floor(Math.random() * (12 - 0) + 0)
+
+    if(ageNum <= 3) {
+        let HeightNum = Math.floor(Math.random() * (3 - 1) + 1);
+        HeightEl.textContent = "Height: " + HeightNum + " feet and " + InchNum + " inches tall";
+    }
+
+    if(ageNum > 3 && ageNum < 10) {
+        let HeightNum = Math.floor(Math.random() * (5 - 3) + 3);
+        HeightEl.textContent = "Height: " + HeightNum + " feet and " + InchNum + " inches tall";
+    }
+
+    if(ageNum >= 10 && ageNum <= 16) {
+        let HeightNum = Math.floor(Math.random() * (6 - 4) + 4);
+        HeightEl.textContent = "Height: " + HeightNum + " feet and " + InchNum + " inches tall";
+    }
+    
+    if(ageNum > 16 && ageNum < 25) {
+        let HeightNum = Math.floor(Math.random() * (7 - 4) + 4);
+        HeightEl.textContent = "Height: " + HeightNum + " feet and " + InchNum + " inches tall";
+    }
+
+    if(ageNum >= 25) {
+        let HeightNum = Math.floor(Math.random() * (7 - 4) + 4);
+        HeightEl.textContent = "Height: " + HeightNum + " feet and " + InchNum + " inches tall";
     }
 
 
@@ -2582,6 +2749,12 @@ if(strUser == "Other") {
 
     container.appendChild(br);
 
+    atrEl = document.createElement("h3");
+
+    atrEl.textContent = "Attributes:";
+
+    container.appendChild(atrEl);
+
     container.appendChild(StrengthEl);
 
     container.appendChild(SmartsEl);
@@ -2589,5 +2762,31 @@ if(strUser == "Other") {
     container.appendChild(LuckEl);
 
     container.appendChild(CharismaEl);
+
+    let br1 = document.createElement("br");
+
+    container.appendChild(br1);
+
+    let ApperanceEl = document.createElement("h3");
+
+    ApperanceEl.textContent = "Apperance:";
+
+    container.appendChild(ApperanceEl);
+
+    container.appendChild(HairEl);
+
+    container.appendChild(EyesEl);
+
+    container.appendChild(GlassEl);
+
+    container.appendChild(WeightEl);
+    
+    container.appendChild(HeightEl);
+
+    // let StoryEl = document.createElement("p");
+
+    // StoryEl.innerHTML = `${FirstName} is a ${OccuEl.value}.`;
+
+    // container.appendChild(StoryEl);
 
 }
