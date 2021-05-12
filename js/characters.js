@@ -1026,7 +1026,7 @@ let occupations = ["Account Collectors",
 "Air Conditioning and Heating Mechanics and Installers",
 "Air Traffic Controllers",
 "Aircraft Cargo Handling Supervisors",
-"Aircraft Equipment Mechanics and Technicians",
+"Aircraft Equipment Mechanic and Technicians",
 "Airfield Operations Specialists",
 "Airline and Commercial Pilots",
 "Ambulance Dispatchers",
@@ -1171,7 +1171,7 @@ let occupations = ["Account Collectors",
 "Crossing Guards",
 "Curators",
 "Customer Service Representatives",
-"Cutters and Trimmers (Hand)",
+"Cutters and Trimmers",
 "Dancers",
 "Data Entry Keyers",
 "Database Administrators",
@@ -1181,7 +1181,7 @@ let occupations = ["Account Collectors",
 "Dental Hygienists",
 "Dental Laboratory Technicians",
 "Dentists",
-"Derrick Operators (Oil and Gas)",
+"Derrick Operators",
 "Designers",
 "Desktop Publishers",
 "Development Managers",
@@ -1191,13 +1191,12 @@ let occupations = ["Account Collectors",
 "Directors - Music",
 "Directors - Film, Theater",
 "Dishwashers",
-"Dispatchers (Police, Fire, and Ambulance)",
-"Dispatchers (Except Police, Fire, and Ambulance)",
+"Dispatchers",
 "Doctors",
 "Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",
 "Drafters",
 "Drywall Installers",
-"Earth Drillers (Except Oil and Gas)",
+"Earth Drillers",
 "Economists",
 "Editors",
 "Education Administrators - Postsecondary",
@@ -1215,7 +1214,7 @@ let occupations = ["Account Collectors",
 "Elevator Installers and Repairers",
 "Embalmers",
 "Emergency Management Directors",
-"Emergency Medical Technicians (EMTs)",
+"Emergency Medical Technicians",
 "Emergency Response Dispatchers",
 "Engineering Managers",
 "Engineering Technicians, except Drafters",
@@ -1352,7 +1351,7 @@ let occupations = ["Account Collectors",
 "Labor Relations Specialists",
 "Landscape Architects",
 "Lawyers",
-"Layout Workers (Metal and Plastic)",
+"Layout Workers",
 "Legal Assistants",
 "Legal Support Workers",
 "Legislators",
@@ -1371,9 +1370,9 @@ let occupations = ["Account Collectors",
 "Logisticians",
 "Machinists",
 "Maids",
-"Mail Clerks and Mail Machine Operators (Except Postal Service)",
+"Mail Clerks and Mail Machine Operators",
 "Maintenance and Repair Workers, General",
-"Makeup Artists (Theatrical and Performance)",
+"Makeup Artists",
 "Management Analysts",
 "Managers",
 "Manicurists",
@@ -1402,11 +1401,11 @@ let occupations = ["Account Collectors",
 "Mechanical Door Repairers",
 "Mechanical Engineering Technicians",
 "Mechanical Engineers",
-"Mechanics - Automotive",
-"Mechanics - Diesel",
-"Mechanics - Heating, Air Conditioning, and Refrigeration",
-"Mechanics - Industrial Machinery",
-"Mechanics - Small Engine",
+"Mechanics - Automotivee",
+"Mechanics - Diesell",
+"Mechanics - Heating, Air Conditioning, and Refrigerations",
+"Mechanics - Industrial Machinerys",
+"Mechanics - Small Engines",
 "Media and Communication Equipment Workers",
 "Media and Communication Workers",
 "Mediators",
@@ -1427,7 +1426,7 @@ let occupations = ["Account Collectors",
 "Metal Workers",
 "Metal Workers and Plastic Workers",
 "Meteorologists",
-"Meter Readers (Utilities)",
+"Meter Readers",
 "Microbiologists",
 "Middle School Principals",
 "Middle School Teachers",
@@ -1439,8 +1438,8 @@ let occupations = ["Account Collectors",
 "Mining Safety Engineers",
 "Mobile Equipment Service Technicians",
 "Models",
-"Model Makers (Wood)",
-"Molders, Shapers, and Casters (Except Metal and Plastic)",
+"Model Makers",
+"Molder, Shaper, and Casters",
 "Morticians",
 "Motel Managers",
 "Motion Picture Projectionists",
@@ -1467,7 +1466,7 @@ let occupations = ["Account Collectors",
 "Nutritionists",
 "Office and Administrative Support Workers",
 "Office Clerks",
-"Office Machine Operators (Except Computer)",
+"Office Machine Operators",
 "Occupational Health and Safety Specialists",
 "Occupational Health and Safety Technicians",
 "Occupational Therapists",
@@ -1478,14 +1477,14 @@ let occupations = ["Account Collectors",
 "Optometrists",
 "Orderlies",
 "Orthotists",
-"Painters (Construction and Maintenance)",
+"Painters",
 "Painting Workers",
 "Paperhangers",
 "Paralegals",
 "Paramedics",
 "Parking Enforcement Workers",
 "Parking Lot Attendants",
-"Patternmakers (Wood)",
+"Patternmakers",
 "Payroll Clerks",
 "Pedicurists",
 "Personal Care Aides",
@@ -1528,7 +1527,7 @@ let occupations = ["Account Collectors",
 "Prepress Technicians and Workers",
 "Preschool Directors",
 "Preschool Teachers",
-"Pressers (Textile, Garment, and Related Materials)",
+"Presser (Textile, Garment, and Related Materials))",
 "Print Binding and Finishing Workers",
 "Printing Press Operators",
 "Private Detectives and Investigators",
@@ -1566,7 +1565,7 @@ let occupations = ["Account Collectors",
 "Recreational Therapists",
 "Recreational Vehicle Service Technicians",
 "Referees, Umpires, and Other Sports Officials",
-"Refractory Materials Repairers (Except Brickmasons)",
+"Refractory Materials Repairers",
 "Refrigeration Mechanics and Installers",
 "Registered Nurses",
 "Rehabilitation Counselors",
@@ -1579,10 +1578,10 @@ let occupations = ["Account Collectors",
 "Respiratory Therapists",
 "Retail Sales Workers",
 "Riggers",
-"Roof Bolters (Mining)",
+"Roof Bolters",
 "Roofers",
-"Rotary Drill Operators (Oil and Gas)",
-"Roustabouts (Oil and Gas)",
+"Rotary Drill Operators",
+"Roustabouts",
 "Sales and Related Workers",
 "Sales Engineers",
 "Sales Managers",
@@ -1597,9 +1596,9 @@ let occupations = ["Account Collectors",
 "Segmental Pavers",
 "Semi Truck Drivers",
 "Septic Tank Servicers and Sewer Pipe Cleaners",
-"Service Unit Operators (Oil, Gas, and Mining)",
+"Service Unit Operators",
 "Set and Exhibit Designers",
-"Sewers (Hand)",
+"Sewers",
 "Shampooers",
 "Sheet Metal Workers",
 "Shipping, Receiving, and Traffic Clerks",
@@ -1636,7 +1635,7 @@ let occupations = ["Account Collectors",
 "Survey Researchers",
 "Surveying Technicians",
 "Surveyors",
-"Switchboard Operators (Including Answering Service)",
+"Switchboard Operators",
 "Systems Analysts",
 "Tailors, Dressmakers, and Custom Sewers",
 "Tank Car, Truck, and Ship Loaders",
@@ -1645,17 +1644,17 @@ let occupations = ["Account Collectors",
 "Tax Preparers",
 "Taxi Drivers",
 "Teacher Assistants",
-"Teachers - Adult Literacy and High School Equivalency Diploma",
+"Teachers - Adult Literacy and High School Equivalency Diplomas",
 "Teachers - Career and Technical Education Teachers",
-"Teachers - High School",
-"Teachers - Kindergarten and Elementary School",
-"Teachers - Middle School",
-"Teachers - Postsecondary",
-"Teachers - Preschool",
-"Teachers - Special Education",
-"Teachers and Instructors",
+"Teachers - High Schools",
+"Teachers - Kindergarten and Elementary Schools",
+"Teachers - Middle Schools",
+"Teachers - Postsecondarys",
+"Teachers - Preschools",
+"Teachers - Special Educations",
+"Teacher and Instructors",
 "Technical Writers",
-"Telecommunications Equipment Installers and Repairers (Except Line Installers)",
+"Telecommunications Equipment Installers and Repairers",
 "Telemarketers",
 "Telephone Operators",
 "Television, Video, and Motion Picture Camera Operators and Editors",
@@ -1715,7 +1714,7 @@ let occupations = ["Account Collectors",
 "Woodworkers",
 "Writers",
 "X-Ray Technologists",
-"Zoologists"];
+"Zoologists", "No Jobb"];
 
 let countries = ["Afghanistan",
 "Albania",
@@ -2138,6 +2137,8 @@ let hobbies = ['3D printing',
 
 let maritalStatis = ['married', 'single', 'divorced', 'separated', 'widowed'];
 
+let PSArray = ['neutral', 'liberal', 'conservative', 'slightly liberal', 'slightly conservative', 'extreme liberal', 'extreme conservative', 'not affiliated'];
+
 let bothArray = femaleNames.concat(maleNames);
 
 function Generated() {
@@ -2357,16 +2358,22 @@ if(strUser == "Other") {
 
     let Ageid = document.getElementById("ageid");
 
-    let ageNum = Math.floor(Math.random() * (100 - 1) + 1);
+    let ageNum;
+
+    let ageNumValue;
 
     let AgeEl = document.createElement("p");
 
     if(Ageid.value != "") {
 
         AgeEl.textContent = "Age: " + Ageid.value;
+        ageNum = Ageid.value;
+
+        ageNum = parseInt(Ageid.value);
 
     }
     else {
+        ageNum = Math.floor(Math.random() * (100 - 1) + 1);
         AgeEl.textContent = "Age: " + ageNum;
     }
 
@@ -2375,7 +2382,7 @@ if(strUser == "Other") {
 
     let Countryid = document.getElementById("countryid");
 
-    console.log(Countryid);
+    // console.log(Countryid.value);
 
     let countryNum = Math.floor(Math.random() * countries.length);
 
@@ -2401,11 +2408,16 @@ if(strUser == "Other") {
 
     let OccuEl = document.createElement("p");
 
+    let young = false;
+    let old = false;
+
     if(ageNum < 14) {
         OccuEl.textContent = "Occupation: None";
+        young = true;
     }
 
     if(ageNum > 69) {
+        old = true;
         OccuEl.textContent = "Occupation: Retired";
     }
 
@@ -2416,7 +2428,34 @@ if(strUser == "Other") {
         OccuEl.textContent = "Occupation: " + occupations[occuNum].slice(0,-1);
     }
 
+    console.log(ageNum + " : " + Ageid.value);
+
+    if(young == true ) {
+        console.log(young);
+        OccuEl.textContent = "Occupation: None"
+    }
+    else {
+        console.log(young);
+    }
+
+    if(old == true) {
+        OccuEl.textContent = "Occupation: " + occupations[occuNum].slice(0,-1) + " (retired)";
+    }
+
     
+    // Political status
+
+    let PSNum;
+
+    let PSEl = document.createElement("p");
+
+    if(young == true) {
+        PSEl.textContent = "Political Standing: None (too young)";
+    }
+    else {
+        PSNum = Math.floor(Math.random() * PSArray.length);
+        PSEl.textContent = "Political Standing: " + PSArray[PSNum];
+    }
 
 
     // attributes
@@ -2538,6 +2577,8 @@ if(strUser == "Other") {
     }
     
     container.appendChild(HobEl);
+
+    container.appendChild(PSEl);
 
     container.appendChild(br);
 
