@@ -2179,7 +2179,14 @@ MaleNameEl.className = "name";
 
 GenderEl.textContent = "Gender: Male";
 
-MaleNameEl.textContent = "First Name: " + maleNames[maleNum];
+let Firstid = document.getElementById("firstid");
+
+if(Firstid.value != "") {
+    MaleNameEl.textContent = "First Name: " + Firstid.value;
+}
+else {
+    MaleNameEl.textContent = "First Name: " + maleNames[maleNum];
+}
 
 // Last Name
 
@@ -2187,7 +2194,14 @@ let lastNum = Math.floor(Math.random() * lastNames.length);
 
 let lastEl = document.createElement("p");
 
-lastEl.textContent = "Last Name: " + lastNames[lastNum];
+let Lastid = document.getElementById("lastid");
+
+    if(Lastid.value != "") {
+        lastEl.textContent = "Last Name: " + Lastid.value;
+    }
+    else {
+        lastEl.textContent = "Last Name: " + lastNames[lastNum];
+    }
 
 container.appendChild(MaleNameEl);
 
@@ -2211,9 +2225,16 @@ let FemaleNameEl = document.createElement("p");
 
 FemaleNameEl.className = "name";
 
-FemaleNameEl.textContent = "First Name: " + femaleNames[femaleNum];
-
 GenderEl.textContent = "Gender: Female";
+
+let Firstid = document.getElementById("firstid");
+
+if(Firstid.value != "") {
+    FemaleNameEl.textContent = "First Name: " + Firstid.value;
+}
+else {
+    FemaleNameEl.textContent = "First Name: " + femaleNames[femaleNum];
+}
 
 // Last Name
 
@@ -2221,7 +2242,14 @@ let lastNum = Math.floor(Math.random() * lastNames.length);
 
 let lastEl = document.createElement("p");
 
-lastEl.textContent = "Last Name: " + lastNames[lastNum];
+let Lastid = document.getElementById("lastid");
+
+    if(Lastid.value != "") {
+        lastEl.textContent = "Last Name: " + Lastid.value;
+    }
+    else {
+        lastEl.textContent = "Last Name: " + lastNames[lastNum];
+    }
 
 container.appendChild(FemaleNameEl);
 
@@ -2247,7 +2275,14 @@ if(strUser == "Other") {
 
     GenderEl.textContent = "Gender: Other";
     
-    BothNameEl.textContent = "First Name: " + bothArray[bothNum];
+    let Firstid = document.getElementById("firstid");
+
+        if(Firstid.value != "") {
+            BothNameEl.textContent = "First Name: " + Firstid.value;
+        }
+        else {
+            BothNameEl.textContent = "First Name: " + bothArray[bothNum];
+        }
 
 
     // Last Name
@@ -2256,7 +2291,14 @@ if(strUser == "Other") {
 
     let lastEl = document.createElement("p");
 
-    lastEl.textContent = "Last Name: " + lastNames[lastNum];
+    let Lastid = document.getElementById("lastid");
+
+    if(Lastid.value != "") {
+        lastEl.textContent = "Last Name: " + Lastid.value;
+    }
+    else {
+        lastEl.textContent = "Last Name: " + lastNames[lastNum];
+    }
 
     container.appendChild(BothNameEl);
 
@@ -2276,7 +2318,14 @@ if(strUser == "Other") {
 
     BothNameEl.className = "name";
     
-    BothNameEl.textContent = "First Name: " + bothArray[bothNum];
+    let Firstid = document.getElementById("firstid");
+
+        if(Firstid.value != "") {
+            BothNameEl.textContent = "First Name: " + Firstid.value;
+        }
+        else {
+            BothNameEl.textContent = "First Name: " + bothArray[bothNum];
+        }
     
     container.appendChild(BothNameEl);
 
@@ -2288,7 +2337,14 @@ if(strUser == "Other") {
 
     let lastEl = document.createElement("p");
 
-    lastEl.textContent = "Last Name: " + lastNames[lastNum];
+    let Lastid = document.getElementById("lastid");
+
+    if(Lastid.value != "") {
+        lastEl.textContent = "Last Name: " + Lastid.value;
+    }
+    else {
+        lastEl.textContent = "Last Name: " + lastNames[lastNum];
+    }
 
     container.appendChild(lastEl);
 
