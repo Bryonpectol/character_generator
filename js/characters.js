@@ -2385,6 +2385,8 @@ if(strUser == "Other") {
 
     // Hobbies
 
+    let Hobbiesid = document.getElementById("hobbiesid");
+
     let hobNum = Math.floor(Math.random() * hobbies.length);
     let hobNum2 = Math.floor(Math.random() * hobbies.length);
 
@@ -2394,7 +2396,12 @@ if(strUser == "Other") {
         hobNum2 = hobNum2 + 1;
     }
 
-    HobEl.textContent = "Hobbies: " + hobbies[hobNum] + ", " + hobbies[hobNum2];
+    if(Hobbiesid.value != "") {
+        HobEl.textContent = "Hobbies: " + Hobbiesid.value;
+    }
+    else {
+        HobEl.textContent = "Hobbies: " + hobbies[hobNum] + ", " + hobbies[hobNum2];
+    }
 
 
     // Appended Things
