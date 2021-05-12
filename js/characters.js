@@ -1030,7 +1030,7 @@ let occupations = ["Account Collectors",
 "Airfield Operations Specialists",
 "Airline and Commercial Pilots",
 "Ambulance Dispatchers",
-"Ambulance Drivers and Attendants (Except Emergency Medical Technicians)",
+"Ambulance Driver and Attendants",
 "Amusement and Recreation Attendants",
 "Animal Care and Service Workers",
 "Animal Control Workers",
@@ -1153,7 +1153,7 @@ let occupations = ["Account Collectors",
 "Construction Laborers and Helpers",
 "Construction Managers",
 "Continuous Mining Machine Operators",
-"Control and Valve Installers and Repairers (Except Mechanical Door)",
+"Control and Valve Installers and Repairers",
 "Cooks",
 "Correctional Officers",
 "Correctional Treatment Specialists",
@@ -1288,10 +1288,10 @@ let occupations = ["Account Collectors",
 "Geological Technicians",
 "Geoscientists",
 "Glaziers",
-"Graders and Sorters (Agricultural Products)",
+"Grader and Sorters",
 "Graduate Teaching Assistants",
 "Graphic Designers",
-"Grinding and Polishing Workers (Hand)",
+"Grinding and Polishing Workers",
 "Grounds Maintenance Workers",
 "Hairstylists",
 "Hand Laborers",
@@ -1299,7 +1299,8 @@ let occupations = ["Account Collectors",
 "Head Cooks",
 "Health and Safety Engineers",
 "Health Diagnosing and Treating Practitioners",
-"Health Educators and Community Health Workers",
+"Health Educators",
+"Community Health Workers",
 "Health Information Technicians",
 "Health Services Managers",
 "Health Technologists and Technicians",
@@ -2314,6 +2315,36 @@ if(strUser == "Other") {
         MSEl.textContent = "Marital Status: " + maritalStatis[MSNum];
 
         container.appendChild(MSEl);
+
+        if(MSNum == 0) {
+            let spouseNum = Math.floor(Math.random() * bothArray.length);
+
+            let spouseName = document.createElement("p");
+
+            spouseName.textContent = "Spouse: " + bothArray[spouseNum];
+
+            container.appendChild(spouseName);
+        }
+
+        if(MSNum == 2 || MSNum == 3) {
+            let exNum = Math.floor(Math.random() * bothArray.length);
+
+            let exName = document.createElement("p");
+
+            exName.textContent = "Ex: " + bothArray[exNum];
+
+            container.appendChild(exName);
+        }
+
+        if(MSNum == 4) {
+            let widowNum = Math.floor(Math.random() * bothArray.length);
+
+            let widowName = document.createElement("p");
+
+            widowName.textContent = "Widower: " + bothArray[widowNum];
+
+            container.appendChild(widowName);
+        }
     }
     else {
         let MSNum = Math.floor(Math.random() * maritalStatis.length);
