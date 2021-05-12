@@ -139,3 +139,25 @@ footer {
     text-align: center;
     padding-top: 1vh;
 }
+
+.indexdivmain {
+    text-align: center;
+    height: 50vh;
+}
+
+.butn {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 2vh;
+    background-color: darkgoldenrod;
+    box-shadow: rgb(37, 37, 37) 2px 2px 2px;
+    font-size: 2rem;
+    margin: 1vh;
+    text-decoration: none;
+}
+
+.butn:hover {
+    cursor: pointer;
+    box-shadow: none;
+}

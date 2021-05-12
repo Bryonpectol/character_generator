@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Person Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="/js/characters.js"></script>
+
+
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <a class="nava" href="https://persongenerator.com/"><li>Home</li></a>
+                <a class="nava" href="/html/generator.html"><li>Generator</li></a>
+                <a class="nava" href="/html/about.html"><li>About</li></a>
+                <a class="nava" href="/html/support.html"><li>Support</li></a>
+            </ul>
+        </nav>
+
+        <div class="form">
+            <h1>Person Generator</h1>
+        <form id="form">
+
+            <div class="realdiv">
+            <div class="formdiv">
+            <label>Gender: (leave blank for random selection)</label>
+            <select id="genderSelect">
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <br />
+
+            <label>First Name: (leave blank for random selection)</label>
+            <input id="firstid" type="text" placeholder="John" value= "" />
+
+            <br />
+
+            <label>Last Name: (leave blank for random selection)</label>
+            <input id="lastid" type="text" placeholder="Smith" value= "" />
+
+            <br />
+
+            <label>Birth Country: (leave blank for random selection)</label>
+            <input id="countryid" type="text" placeholder="Italy" value= "" />
+
+            <br />
+
+            <label>Age: (leave blank for random selection)</label>
+            <input id="ageid" type="number" placeholder="16" value= "" />
+
+            <br />
+
+            <label>Occupation: (leave blank for random selection)</label>
+            <input id="occuid" type="text" placeholder="Programmer" value= "" />
+
+            <br />
+
+            <label>Hobbies: (leave blank for random selection)</label>
+            <input id="hobbiesid" type="text" placeholder="hiking, fishing" value= "" />
+
+            </div>
+            </div>
+        </form>
+
+        <button id="btn" onclick="Generated()">Generate!</button>
+        <br />
+        <button id="refresh" onclick="refresh()">Try Again</button>
+
+        </div>
+
+
+        <div id="thecontainer">
+        <div id="characterdiv">
+            
+        </div>
+        </div>
+
+        <footer>
+            <p class="footp">Created by: Bryon Pectol - 2021</p>
+        </footer>
+        
+    </body>
+</html>
