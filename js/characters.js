@@ -2339,11 +2339,11 @@ if(strUser == "Other") {
 
     // Occupation
 
+    let OccuId = document.getElementById("occuid");
+
     let occuNum = Math.floor(Math.random() * occupations.length);
 
     let OccuEl = document.createElement("p");
-
-    OccuEl.textContent = "Occupation: " + occupations[occuNum].slice(0,-1);
 
     if(ageNum < 14) {
         OccuEl.textContent = "Occupation: None";
@@ -2351,6 +2351,13 @@ if(strUser == "Other") {
 
     if(ageNum > 69) {
         OccuEl.textContent = "Occupation: Retired";
+    }
+
+    if(OccuId.value != "") {
+        OccuEl.textContent = "Occupation: " + OccuId.value;
+    }
+    else {
+        OccuEl.textContent = "Occupation: " + occupations[occuNum].slice(0,-1);
     }
 
     
