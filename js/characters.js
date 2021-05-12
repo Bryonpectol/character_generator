@@ -1644,14 +1644,14 @@ let occupations = ["Account Collectors",
 "Tax Preparers",
 "Taxi Drivers",
 "Teacher Assistants",
-"Teachers - Adult Literacy and High School Equivalency Diplomas",
-"Teachers - Career and Technical Education Teachers",
-"Teachers - High Schools",
-"Teachers - Kindergarten and Elementary Schools",
-"Teachers - Middle Schools",
-"Teachers - Postsecondarys",
-"Teachers - Preschools",
-"Teachers - Special Educations",
+"Teacher - Adult Literacy and High School Equivalency Diplomas",
+"Teacher - Career and Technical Education Teachers",
+"Teacher - High Schools",
+"Teacher - Kindergarten and Elementary Schools",
+"Teacher - Middle Schools",
+"Teacher - Postsecondarys",
+"Teacher - Preschools",
+"Teacher - Special Educations",
 "Teacher and Instructors",
 "Technical Writers",
 "Telecommunications Equipment Installers and Repairers",
@@ -1666,6 +1666,7 @@ let occupations = ["Account Collectors",
 "Tile Setters",
 "Timekeeping Clerks",
 "Tire Builders",
+"Freeloaderr",
 "Tire Repairers and Changers",
 "Tobacco Processing Workers",
 "Tool and Die Makers",
@@ -1967,15 +1968,19 @@ let countries = ["Afghanistan",
 "Åland Islands"];
 
 let hobbies = ['3D printing',
+'Bar Hopping',
 'Amateur radio',
 'Scrapbooking',
 'sleeping',
 'Amateur radio',
 'Acting',
+'sex',
+'Alien Hunting',
 'Baton twirling',
 'Board games',
 'Book restoration',
 'Cabaret',
+'Camping',
 'Calligraphy',
 'Candle making',
 'Computer programming',
@@ -2131,7 +2136,7 @@ let hobbies = ['3D printing',
 'Taekwondo',
 'Tai chi',
 'Urban exploration',
-'Vacation',
+'Vacationing',
 'Vehicle restoration',
 'Water sports'];
 
@@ -2202,6 +2207,8 @@ if(strUser == "Male") {
 
 let container = document.getElementById("characterdiv");
 
+container.style.marginBottom = "5vh";
+
 let maleNum = Math.floor(Math.random() * maleNames.length);
 
 let GenderEl = document.createElement("p");
@@ -2260,6 +2267,8 @@ if(strUser == "Female") {
 
 let container = document.getElementById("characterdiv");
 
+container.style.marginBottom = "5vh";
+
 let femaleNum = Math.floor(Math.random() * femaleNames.length);
 
 let GenderEl = document.createElement("p");
@@ -2313,6 +2322,8 @@ if(strUser == "Other") {
     let GenderEl = document.createElement("p");
 
     let container = document.getElementById("characterdiv");
+
+    container.style.marginBottom = "5vh";
     
     let bothNum = Math.floor(Math.random() * bothArray.length);
     
@@ -2364,6 +2375,8 @@ if(strUser == "Other") {
     if(strUser == "Select Gender") {
 
     let container = document.getElementById("characterdiv");
+
+    container.style.marginBottom = "5vh";
     
     let bothNum = Math.floor(Math.random() * bothArray.length);
         
