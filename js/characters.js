@@ -1969,7 +1969,8 @@ let countries = ["Afghanistan",
 
 let hobbies = ['3D printing',
 'Amateur radio',
-'Scrapbook',
+'Scrapbooking',
+'sleeping',
 'Amateur radio',
 'Acting',
 'Baton twirling',
@@ -2139,7 +2140,6 @@ let maritalStatis = ['married', 'single', 'divorced', 'separated', 'widowed'];
 
 let bothArray = femaleNames.concat(maleNames);
 
-
 function Generated() {
 
 let theCont = document.getElementById("thecontainer");
@@ -2298,12 +2298,122 @@ if(strUser == "Other") {
 
     // Age
 
+    let Ageid = document.getElementById("ageid");
+
     let ageNum = Math.floor(Math.random() * (100 - 1) + 1);
 
     let AgeEl = document.createElement("p");
 
-    AgeEl.textContent = "Age: " + ageNum;
+    if(Ageid.value != "") {
 
+        AgeEl.textContent = "Age: " + Ageid.value;
+
+    }
+    else {
+        AgeEl.textContent = "Age: " + ageNum;
+    }
+
+
+    // Countries
+
+    let Countryid = document.getElementById("countryid");
+
+    console.log(Countryid);
+
+    let countryNum = Math.floor(Math.random() * countries.length);
+
+    let CountryEl = document.createElement("p");
+
+    if(Countryid.value != "") {
+
+        CountryEl.textContent = "Birth Country: " + Countryid.value;
+
+    }
+    else {
+
+        CountryEl.textContent = "Birth Country: " + countries[countryNum];
+
+    }
+
+
+    // Occupation
+
+    let occuNum = Math.floor(Math.random() * occupations.length);
+
+    let OccuEl = document.createElement("p");
+
+    OccuEl.textContent = "Occupation: " + occupations[occuNum].slice(0,-1);
+
+    if(ageNum < 14) {
+        OccuEl.textContent = "Occupation: None";
+    }
+
+    if(ageNum > 69) {
+        OccuEl.textContent = "Occupation: Retired";
+    }
+
+    
+
+
+    // attributes
+
+    let strengthNum = Math.floor(Math.random() * (100 - 1) + 1);
+    let smartsNum = Math.floor(Math.random() * (100 - 1) + 1);
+    let luckNum = Math.floor(Math.random() * (100 - 1) + 1);
+    let charismaNum = Math.floor(Math.random() * (100 - 1) + 1);
+
+    let StrengthEl = document.createElement("p");
+    let SmartsEl = document.createElement("p");
+    let LuckEl = document.createElement("p");
+    let CharismaEl = document.createElement("p");
+
+    StrengthEl.textContent = "Strength: " + strengthNum;
+    SmartsEl.textContent = "Smarts: " + smartsNum;
+    LuckEl.textContent = "Luck: " + luckNum;
+    CharismaEl.textContent = "Charisma: " + charismaNum;
+
+    let br = document.createElement("br");
+    
+
+    // Hobbies
+
+    let hobNum = Math.floor(Math.random() * hobbies.length);
+    let hobNum2 = Math.floor(Math.random() * hobbies.length);
+
+    let HobEl = document.createElement("p");
+
+    if(hobNum2 == hobNum) {
+        hobNum2 = hobNum2 + 1;
+    }
+
+    HobEl.textContent = "Hobbies: " + hobbies[hobNum] + ", " + hobbies[hobNum2];
+
+
+    // Appended Things
+
+    if(GenderNum == 1 && strUser != "Male" && strUser != "Female") {
+        GenderEl = document.createElement("p");
+        GenderEl.textContent = "Gender: Male";
+        container.appendChild(GenderEl);
+    }
+
+    if(GenderNum == 2 && strUser != "Male" && strUser != "Female") {
+        GenderEl = document.createElement("p");
+        GenderEl.textContent = "Gender: Female";
+        container.appendChild(GenderEl);
+    }
+
+    if(GenderNum == 3 && strUser != "Male" && strUser != "Female") {
+        GenderEl = document.createElement("p");
+        GenderEl.textContent = "Gender: Other";
+        container.appendChild(GenderEl);
+    }
+
+    container.appendChild(AgeEl);
+
+    container.appendChild(CountryEl);
+
+    container.appendChild(OccuEl);
 
     // Marital Statis
 
@@ -2355,76 +2465,17 @@ if(strUser == "Other") {
 
         container.appendChild(MSEl);
     }
-
-    
-
-
-    // Countries
-
-    let countryNum = Math.floor(Math.random() * countries.length);
-
-    let CountryEl = document.createElement("p");
-
-    CountryEl.textContent = "Birth Country: " + countries[countryNum];
-
-
-    // Occupation
-
-    let occuNum = Math.floor(Math.random() * occupations.length);
-
-    let OccuEl = document.createElement("p");
-
-    OccuEl.textContent = "Occupation: " + occupations[occuNum].slice(0,-1);
-
-    if(ageNum < 14) {
-        OccuEl.textContent = "Occupation: None";
-    }
-
-    if(ageNum > 69) {
-        OccuEl.textContent = "Occupation: Retired";
-    }
-
-
-    // 
-
-    let hobNum = Math.floor(Math.random() * hobbies.length);
-    let hobNum2 = Math.floor(Math.random() * hobbies.length);
-
-    let HobEl = document.createElement("p");
-
-    if(hobNum2 == hobNum) {
-        hobNum2 = hobNum2 + 1;
-    }
-
-    HobEl.textContent = "Hobbies: " + hobbies[hobNum] + ", " + hobbies[hobNum2];
-
-
-    // Appended Things
-
-    if(GenderNum == 1 && strUser != "Male" && strUser != "Female") {
-        GenderEl = document.createElement("p");
-        GenderEl.textContent = "Gender: Male";
-        container.appendChild(GenderEl);
-    }
-
-    if(GenderNum == 2 && strUser != "Male" && strUser != "Female") {
-        GenderEl = document.createElement("p");
-        GenderEl.textContent = "Gender: Female";
-        container.appendChild(GenderEl);
-    }
-
-    if(GenderNum == 3 && strUser != "Male" && strUser != "Female") {
-        GenderEl = document.createElement("p");
-        GenderEl.textContent = "Gender: Other";
-        container.appendChild(GenderEl);
-    }
-
-    container.appendChild(AgeEl);
-
-    container.appendChild(CountryEl);
-
-    container.appendChild(OccuEl);
     
     container.appendChild(HobEl);
+
+    container.appendChild(br);
+
+    container.appendChild(StrengthEl);
+
+    container.appendChild(SmartsEl);
+
+    container.appendChild(LuckEl);
+
+    container.appendChild(CharismaEl);
 
 }

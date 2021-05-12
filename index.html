@@ -15,13 +15,28 @@
         <div class="form">
             <h1>Person Generator</h1>
         <form id="form">
-            <label>Male or Female:</label>
+
+            <div class="realdiv">
+            <div class="formdiv">
+            <label>Gender: (leave blank for random selection)</label>
             <select id="genderSelect">
                 <option>Select Gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
             </select>
+
+            <br />
+
+            <label>Birth Country: (leave blank for random selection)</label>
+            <input id="countryid" type="text" placeholder="Italy" value= "" />
+
+            <br />
+
+            <label>Age: (leave blank for random selection)</label>
+            <input id="ageid" type="number" placeholder="16" value= "" />
+            </div>
+            </div>
         </form>
 
         <button id="btn" onclick="Generated()">Generate!</button>
