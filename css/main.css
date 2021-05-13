@@ -3,6 +3,9 @@
     padding: 0px;
 }
 
+@media only screen and (min-width: 601px) {
+
+
 body {
     background-color: teal;
     /* height: 98vh; */
@@ -185,4 +188,9 @@ ul.aboutp {
     background-color: white;
     border-radius: 25px;
     padding: 3vh;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    
 }
