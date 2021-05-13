@@ -102,6 +102,10 @@ input {
     text-align: center;
 }
 
+#thankyou {
+    text-align: center;
+}
+
 select {
     width: 50.65vh;
 }
@@ -304,6 +308,10 @@ ul.aboutp {
     label {
         color: white;
     }
+
+    #thankyou {
+        text-align: center;
+    }
     
     .formdiv {
         display: flex;
@@ -365,8 +373,8 @@ ul.aboutp {
     }
     
     .aboutp {
-        margin-right: 20%;
-        margin-left: 20%;
+        /* margin-right: 20%; */
+        /* margin-left: 20%; */
         line-height: 2em;
         background-color: white;
         border-radius: 25px;
@@ -374,13 +382,13 @@ ul.aboutp {
     }
     
     ul.aboutp {
-        margin-right: 30%;
-        margin-left: 30%;
+        margin-right: 5%;
+        margin-left: 5%;
         margin-top: 2vh;
         line-height: 2em;
         background-color: white;
         border-radius: 25px;
-        padding: 3vh;
+        padding: 2.5vh;
     }
 
 }
