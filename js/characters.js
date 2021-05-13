@@ -2784,7 +2784,7 @@ if(strUser == "Other") {
 
     let ApperanceEl = document.createElement("h3");
 
-    ApperanceEl.textContent = "Apperance:";
+    ApperanceEl.textContent = "Appearance:";
 
     container.appendChild(ApperanceEl);
 
@@ -2803,6 +2803,12 @@ if(strUser == "Other") {
     // StoryEl.innerHTML = `${FirstName} is a ${OccuEl.value}.`;
 
     // container.appendChild(StoryEl);
+
+    let totalComs = maleNames.length + femaleNames.length + hobbies.length + occupations.length + Hair.length + Eyes.length + countries.length + PSArray.length + maritalStatis.length + lastNames.length + GlassArray.length;
+
+    let total = totalComs * totalComs;
+
+    console.log(total);
 
 }
 

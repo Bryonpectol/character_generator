@@ -21,13 +21,13 @@ nav {
     background-color: rgb(37, 37, 37);
 }
 
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
     padding-top: 1vh;
 }
 
-li {
+nav ul li {
     color: white;
     list-style-type: none;
 }
@@ -142,7 +142,13 @@ footer {
 
 .indexdivmain {
     text-align: center;
-    height: 50vh;
+    height: 81.75vh;
+}
+
+.aboutdivmain {
+    text-align: center;
+    height: 100%;
+    margin-bottom: 5vh;
 }
 
 .butn {
@@ -160,4 +166,23 @@ footer {
 .butn:hover {
     cursor: pointer;
     box-shadow: none;
+}
+
+.aboutp {
+    margin-right: 20%;
+    margin-left: 20%;
+    line-height: 2em;
+    background-color: white;
+    border-radius: 25px;
+    padding: 3vh;
+}
+
+ul.aboutp {
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 2vh;
+    line-height: 2em;
+    background-color: white;
+    border-radius: 25px;
+    padding: 3vh;
 }
