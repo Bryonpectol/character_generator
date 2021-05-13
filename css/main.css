@@ -206,7 +206,7 @@ ul.aboutp {
     }
     
     nav {
-        height: 11vh;
+        height: 11.5vh;
         width: 100%;
         background-color: rgb(37, 37, 37);
     }
@@ -216,6 +216,7 @@ ul.aboutp {
         flex-direction: row;
         padding-top: 1vh;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     nav ul li {
