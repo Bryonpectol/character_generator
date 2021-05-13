@@ -353,6 +353,8 @@ ul.aboutp {
         font-size: 2rem;
         margin: 1vh;
         text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .butn:hover {
