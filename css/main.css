@@ -192,5 +192,190 @@ ul.aboutp {
 }
 
 @media only screen and (max-width: 600px) {
+
+    body {
+        background-color: teal;
+        /* height: 98vh; */
+    }
     
+    #thecontainer {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        /* height: 15vh; */
+    }
+    
+    nav {
+        height: 11vh;
+        width: 100%;
+        background-color: rgb(37, 37, 37);
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1vh;
+    }
+    
+    nav ul li {
+        color: white;
+        list-style-type: none;
+        font-size: 0.5em;
+    }
+    
+    .nava {
+        background-color: darkgoldenrod;
+        padding: 1vh 2vh 1vh 2vh;
+        border-radius: 25px;
+        text-decoration: none;
+        margin: 1vh;
+    }
+    
+    #characterdiv {
+        text-align: center;
+        background-color: white;
+        width: 60vh;
+        /* height: 70vh; */
+        /* border: 2px seagreen solid; */
+        padding-bottom: 3vh;
+        border-radius: 20px;
+        box-shadow: rgb(37, 37, 37) 5px 5px 5px;
+        margin-bottom: 1vh;
+    }
+    
+    .form {
+        text-align: center;
+        /* height: 20vh; */
+    }
+    
+    #refresh {
+        visibility: hidden;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        padding: 2vh;
+        background-color: darkgoldenrod;
+        box-shadow: rgb(37, 37, 37) 2px 2px 2px;
+        font-size: 1rem;
+        margin-bottom: 1vh;
+    }
+    
+    #refresh:hover {
+        cursor: pointer;
+        box-shadow: none;
+    }
+    
+    #btn {
+        border-radius: 25px;
+        border: none;
+        color: white;
+        padding: 2vh;
+        background-color: darkgoldenrod;
+        box-shadow: rgb(37, 37, 37) 2px 2px 2px;
+        font-size: 2rem;
+        margin: 1vh;
+    }
+    
+    #btn:hover {
+        cursor: pointer;
+        box-shadow: none;
+    }
+    
+    form {
+        margin: 1vh;
+    }
+    
+    input {
+        width: 50vh;
+        text-align: center;
+    }
+    
+    select {
+        width: 50.65vh;
+    }
+    
+    .realdiv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    label {
+        color: white;
+    }
+    
+    .formdiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .name {
+        margin-top: 2.5vh;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: 2vh;
+    }
+    
+    footer {
+        width: 100%;
+        height: 5vh;
+        background-color: rgb(37, 37, 37);
+        /* position: fixed; */
+    }
+    
+    .footp {
+        color: darkgoldenrod;
+        text-align: center;
+        padding-top: 1vh;
+    }
+    
+    .indexdivmain {
+        text-align: center;
+        height: 81.75vh;
+    }
+    
+    .aboutdivmain {
+        text-align: center;
+        height: 100%;
+        margin-bottom: 5vh;
+    }
+    
+    .butn {
+        border-radius: 25px;
+        border: none;
+        color: white;
+        padding: 2vh;
+        background-color: darkgoldenrod;
+        box-shadow: rgb(37, 37, 37) 2px 2px 2px;
+        font-size: 2rem;
+        margin: 1vh;
+        text-decoration: none;
+    }
+    
+    .butn:hover {
+        cursor: pointer;
+        box-shadow: none;
+    }
+    
+    .aboutp {
+        margin-right: 20%;
+        margin-left: 20%;
+        line-height: 2em;
+        background-color: white;
+        border-radius: 25px;
+        padding: 3vh;
+    }
+    
+    ul.aboutp {
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-top: 2vh;
+        line-height: 2em;
+        background-color: white;
+        border-radius: 25px;
+        padding: 3vh;
+    }
+
 }
