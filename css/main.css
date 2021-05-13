@@ -355,6 +355,7 @@ ul.aboutp {
         text-decoration: none;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     .butn:hover {
