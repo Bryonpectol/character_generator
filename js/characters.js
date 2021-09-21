@@ -1717,6 +1717,8 @@ let occupations = ["Account Collectors",
 "X-Ray Technologists",
 "Zoologists", "No Jobb"];
 
+let Languages = ['Pashto/Dari','Albanian','Arabic','Samoan/English','Catalan','Portuguese', 'English','Russian','English','Spanish','Armenian','Dutch/Papiamento','English','German','Azerbaijani','Enlish','Arabic','Bengali','English','Belarusian/Russian','Dutch/German','English','French','English','Dzongkha','Spanish','Dutch','Bosnian/Serbian/Croatian','English','Unknown (maybe Norwegian)','Portuguese','English','Malay','Bulgarian','French','Kirundi/French','Portuguese','Khmer','French/English','English/French','English','Sango/French','Arabic','Spanish','Mandarin','English','Malay dialect','Spanish','Comorian/Arabic','French','Ended on Congo',''];
+
 let countries = ["Afghanistan",
 "Albania",
 "Algeria",
@@ -2147,6 +2149,7 @@ let PSArray = ['neutral', 'liberal', 'conservative', 'slightly liberal', 'slight
 let Hair = ['Brown', 'Black', 'Blonde', 'Silver', 'Dirty Blonde', 'Red', 'Pink', 'Blue', 'Green'];
 
 let Eyes = ['Brown', 'Blue', 'Green', 'Grey', 'Hazel'];
+
 
 let EyesFemaleImg = [];
 
@@ -2681,6 +2684,22 @@ if(strUser == "Other") {
     }
 
 
+    // Languages
+
+    let Languagesid = document.getElementById("languageid");
+
+    let LangEl = document.createElement("p");
+
+    let LangNum = Math.floor(Math.random() * Languages.length);
+
+    if(Languagesid.value != "") {
+        LangEl.textContent = "Languages: " + Languagesid.value;
+    }
+    else {
+        LangEl.textContent = "Languages: " + Languages[countryNum];
+    }
+
+
     // Appended Things
 
     if(GenderNum == 1 && strUser != "Male" && strUser != "Female") {
@@ -2797,6 +2816,8 @@ if(strUser == "Other") {
     container.appendChild(WeightEl);
     
     container.appendChild(HeightEl);
+    
+    container.appendChild(LangEl);
 
     // let StoryEl = document.createElement("p");
 
